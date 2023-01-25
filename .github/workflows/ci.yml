@@ -19,6 +19,6 @@ jobs:
         go vet .
         gofmt -l -s -w .
     - name: Test
-      run: go test -v
+      run: go run ./internal/cmd/smallenv go test -v
     - name: Install
       run: go install
